@@ -1,16 +1,20 @@
 <template>
 <div>
-  <div class="container full-flex top-bar">
-    <h1 style="font-size: 160%;" class="Barlow">{{name}}</h1>
+  <div class="full-flex top-bar">
+
     <!-- <h4> I believe that good design can give a feeling of  order and expedience. Nn crowded, massy environment  in global communication era deliberate medium is a way to achieve goals and success.  I see design as a stepwise process – ideas become clear and message is sharpen to perfection. </h4> -->
-    <img style="order: 4;" class="logo" :src="logo" />
+    <!-- <img style="order: 4;" class="logo" :src="logo" /> -->
     <!-- <div style="background-color: black; width: 22px; height: 18px; order: 1; z-index: 1000;" class="menu-button"></div> -->
   </div>
 
-  <div class="container flex-center hello Barlow justify-txt">
-    <p>
-      I believe that good design can give a sense of  order and purpose. In the crowded environment  of today’s global communication era a deliberate medium is a way to achieve goals and success.  I see design as a stepwise process – ideas become clear and the message sharpens to perfection.
-    </p>
+  <div style="position: absolute; top: 0; left: 0;">
+    <div class="container space-between hello Barlow justify-txt">
+      <h1 style="font-size: 160%;" class="Barlow">{{name}}<span class="txt4"> DESIGN</span></h1>
+      <p class="serif">
+        <!-- <strong></strong><br /> -->
+        I believe that design can give a sense of  order and purpose. It's a stepwise process when ideas become clear and the message sharpens to perfection.
+      </p>
+    </div>
   </div>
 
 
@@ -22,7 +26,7 @@
   export default {
     data () {
       return {
-        name: 'MATEUSZ RÓŻALSKI DESIGN',
+        name: 'MATEUSZ RÓŻALSKI',
         logo: './src/assets/img/logo.svg'
       }
     }

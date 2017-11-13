@@ -37,7 +37,9 @@ a
 .flex-end
   display: flex
   justify-content: flex-end
-
+.space-between
+  display: flex
+  justify-content: space-between
 
 .top-bar
   display: flex
@@ -55,24 +57,31 @@ a
     left: calc(50% - 30px)
     top: 20vh
 .hello
+  display: flex
+  margin: 0 auto
   height: 66vh
-  width: 100%
-  justify-content: flex-end
+  margin-left: 15vw
+  margin-right: 15vw
+  margin-top: 20vh
   @media only screen and (max-width: $desktop)
     justify-content: center
   p
     font-size: 120%
     line-height: 140%
-    margin-top: 4em
     width: 55%
     @media only screen and (max-width: $desktop)
       width: 70%
+  h1
+    margin-top: 0
 
 .menu-button
   @media only screen and (min-width: $desktop)
       position: absolute
       right: 15vw
       top: 23vh
+
+#portfolio
+  margin-top: 60vh
 
 .wraper
   h2
@@ -178,8 +187,9 @@ a
 
 .modal-title
   margin-top: 0
+  margin-bottom: 10px
   font-size: 150%
-  color: black
+  color: white
 .bombka
   width: 100%
   height: auto

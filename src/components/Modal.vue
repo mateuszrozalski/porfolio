@@ -19,7 +19,7 @@
 
           <div class="modal-footer">
             <slot name="footer">
-              MATEUSZ RÓŻALSKI DESIGN
+              MATEUSZ RÓŻALSKI <span class="txt4">DESIGN</span>
                 <i class=" modal-default-button fa fa-level-down fa-2x" aria-hidden="true" @click="$emit('close')"></i>
             </slot>
           </div>
@@ -85,7 +85,7 @@
   height: auto;
 }
 .modal-body {
-  padding: 20px;
+  padding: 5px 20px;
   color: black;
   background: #e3b505;
 }
@@ -103,6 +103,11 @@
 .fa {
   cursor: pointer;
   margin-bottom: -15px;
+}
+
+.VueCarousel-navigation-button {
+  font-size: 180%;
+  color: rgb(227, 181, 5) !important;
 }
 /*
  * The following styles are auto-applied to elements with
