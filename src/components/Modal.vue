@@ -68,7 +68,7 @@
 }
 @media only screen and (max-width: 751px) {
   .modal-container {
-    width: 90%;
+    width: 90% !important;
   }
 }
 @media only screen and (max-height: 551px) {

@@ -32,7 +32,7 @@
                   :navigationEnabled="true"
                   paginationActiveColor="#e3b505"
                   slot="header">
-        <slide v-if="item.details">
+        <slide v-if="item.details" class="desktop-only">
           <div style="padding: 20px;">
             <h4 class="modal-title" style="color: #e3b505;">What was the problem?</h4>
             <p class="serif">
@@ -53,7 +53,9 @@
        <div class="modal-body" slot="body">
          <h4 class="modal-title">{{item.name}}</h4>
          <p>{{item.description}}</p>
-         <h4 v-if="item.details">You can find detailed information about project on first slide.</h4>
+         <h4 v-if="item.details" class="desktop-only">You can find detailed information about project on first slide.</h4>
+         <h4 v-if="item.details" class="mobile-only">To see more details about this project visit full version of my site.</h4>
+
          <h4 v-if="item.link" class="modal-title">Visit:
            <a :href="item.link" target="_blank">
              <i class="fa fa-external-link"
