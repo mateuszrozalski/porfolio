@@ -32,6 +32,9 @@
                   :navigationEnabled="true"
                   paginationActiveColor="#e3b505"
                   slot="header">
+          <slide v-for="picture in item.imgs" class="bombka">
+             <img :src="picture.img" />
+          </slide>
          <slide v-if="item.details">
            <div style="padding: 20px;">
              <h4 class="modal-title" style="color: #e3b505;">What was the problem?</h4>
@@ -44,9 +47,6 @@
              </p>
              <h4 style="color: #e3b505B;">Use arrows or dots to change slide and see image assets.</h4>
            </div>
-         </slide>
-         <slide v-for="picture in item.imgs" class="bombka">
-            <img :src="picture.img" />
          </slide>
        </carousel>
 
