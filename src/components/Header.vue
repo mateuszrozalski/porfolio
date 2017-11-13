@@ -9,8 +9,8 @@
 
   <div style="position: absolute; top: 0; left: 0;">
     <div class="container space-between hello Barlow justify-txt">
-      <h1 style="font-size: 160%;" class="Barlow">{{name}}<span class="txt4"> DESIGN</span></h1>
-      <p class="serif">
+      <h1 style="font-size: 160%;" class="Barlow">{{name}}<br class="mobile-only"><span class="txt4"> DESIGN</span></h1>
+      <p class="serif desktop-only">
         <!-- <strong></strong><br /> -->
         I believe that design can give a sense of  order and purpose. It's a stepwise process when ideas become clear and the message sharpens to perfection.
       </p>
