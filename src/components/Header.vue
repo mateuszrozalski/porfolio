@@ -12,7 +12,7 @@
       <h1 style="font-size: 160%;" class="Barlow">{{name}}<br class="mobile-only"><span class="txt4"> DESIGN</span></h1>
       <p class="serif desktop-only">
         <!-- <strong></strong><br /> -->
-        I believe that design can give a sense of  order and purpose. It's a stepwise process when ideas become clear and the message sharpens to perfection.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       </p>
     </div>
   </div>
