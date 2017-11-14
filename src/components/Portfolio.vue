@@ -33,7 +33,7 @@
                   paginationActiveColor="#e3b505"
                   slot="header">
         <slide v-if="item.details" class="desktop-only">
-          <div style="padding: 20px;">
+          <div class="details" style="padding: 20px;">
             <h4 class="modal-title" style="color: #e3b505;">What was the problem?</h4>
             <p class="serif">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -105,7 +105,7 @@
             description: 'Lorem ipsum dolor sit amet, \n consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             type: 'Website',
             link: 'http://hollowquartet.pl',
-            bac: 'rgba(92, 92, 92, 0.95)',
+            bac: 'rgba(55, 71, 83, .95)',
             img: "url('./src/assets/img/works/HollowQuartet/hq.jpg')",
             imgs: [
               {img: "./src/assets/img/works/HollowQuartet/hq_1.jpg"},
@@ -119,7 +119,7 @@
             description: 'Portfolio website for polish classical pianist.',
             type: 'Website',
             link: 'http://marekbracha.pl',
-            bac: 'rgba(92, 92, 92, 0.95)',
+            bac: 'rgba(55, 71, 83, .95)',
             img: "url('./src/assets/img/works/MarekBracha/marek.jpg')",
             imgs: [
               {img: "./src/assets/img/works/MarekBracha/mb_1.jpg"},
