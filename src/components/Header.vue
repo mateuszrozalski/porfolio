@@ -18,7 +18,7 @@
   export default {
     data () {
       return {
-        name: 'Mateusz Różalski',
+        name: 'Mateusz Rozalski',
         logo: './src/assets/img/logo.svg'
       }
     }

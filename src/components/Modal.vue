@@ -19,7 +19,7 @@
 
           <div class="modal-footer">
             <slot name="footer">
-              MATEUSZ RÓŻALSKI <span class="txt4">DESIGN</span>
+              MATEUSZ ROZALSKI <span class="txt4">DESIGN</span>
                 <i class=" modal-default-button fa fa-level-down fa-2x" aria-hidden="true" @click="$emit('close')"></i>
             </slot>
           </div>
