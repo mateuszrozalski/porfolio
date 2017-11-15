@@ -43,7 +43,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
-            <h4 style="color: #e3b505B;">Use arrows or dots to change slide and see image assets.</h4>
+            <h4 style="color: #e3b505B; padding-top: 5px; border-top: 1px solid;">Use arrows or dots to change slide and see image assets.</h4>
           </div>
         </slide>
           <slide v-for="picture in item.imgs" class="bombka">
@@ -118,7 +118,7 @@
           },
           {
             name: 'Marek Bracha',
-            description: 'Portfolio website for polish classical pianist.',
+            description: 'Portfolio website for polish classical pianist. Built with HTML5, CSS3 and simple JavaScript animations.',
             type: 'Website',
             link: 'http://marekbracha.pl',
             bac: 'rgba(55, 71, 83, .95)',
