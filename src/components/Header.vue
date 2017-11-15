@@ -5,7 +5,7 @@
         <p class="serif" style="font-size: 80%">
           branding, web development, web design, print design...
         </p>
-        <img class="logo" src="../assets/img/logo.svg">
+        <img class="logo" :src="logo">
         <!-- <h4 class="barlow-semi-condensed">(+48) 531 051 434</h4>
         <a href="mailto:olivetum@gmail.com"><h4 class="barlow-semi-condensed">MATEUSZROZALSKI@GMAIL.COM</h4></a>
         <h4 class="barlow-semi-condensed">MATEUSZROZALSKI.GITHUB.IO/PORTFOLIO/</h4>
