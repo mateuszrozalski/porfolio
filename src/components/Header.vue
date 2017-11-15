@@ -1,17 +1,25 @@
 <template>
-<div>
-  <div style="position: absolute; top: 0; left: 0;">
+  <div>
     <div class="container space-between hello justify-txt">
-      <h1 class="barlow-semi-condensed site-name">{{name}}<br class="mobile-only"><span class="txt4 serif" style="font-weight: 400; font-size: 100%;"> Design</span></h1>
-      <p class="serif desktop-only txt5" style="line-height: 240%; font-size: 100%">
-        branding, web development, web design, print design...
-      </p>
+      <div class="business-card">
+        <p class="serif" style="font-size: 80%">
+          branding, web development, web design, print design...
+        </p>
+        <img class="logo" src="../assets/img/logo.svg">
+        <!-- <h4 class="barlow-semi-condensed">(+48) 531 051 434</h4>
+        <a href="mailto:olivetum@gmail.com"><h4 class="barlow-semi-condensed">MATEUSZROZALSKI@GMAIL.COM</h4></a>
+        <h4 class="barlow-semi-condensed">MATEUSZROZALSKI.GITHUB.IO/PORTFOLIO/</h4>
+        <i style="float: right;" class="fa fa-level-down fa-2x txt3" aria-hidden="true"></i> -->
+      </div>
+    </div>
+    <div style="width:100%; height: 8px; display: flex;">
+      <div style="width: 20% !important; height: 100% !important;" class="bg4">  </div>
+      <div style="width: 20% !important; height: 100% !important;" class="bg1">  </div>
+      <div style="width: 20% !important; height: 100% !important;" class="bg2">  </div>
+      <div style="width: 20% !important; height: 100% !important;" class="bg5">  </div>
+      <div style="width: 20% !important; height: 100% !important;" class="bg3">  </div>
     </div>
   </div>
-
-
-</div>
-
 </template>
 
 <script>

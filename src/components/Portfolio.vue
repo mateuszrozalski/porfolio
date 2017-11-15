@@ -1,11 +1,10 @@
 <template>
   <div class="wraper" id="portfolio">
-   <h2>Portfolio <span class="txt4">/</span> Showcase</h2>
+   <h2>Portfolio <span class="txt1">/</span> Showcase</h2>
    <div class="boxes">
 
  <div v-for="item in works" class="box" :class="{noHover: item.showModal}" :style="{background: item.img}">
        <div>
-
          <h4 class="title">
            <span style="font-size: 50%; text-decoration: underline">{{item.type}}</span>
            <br>
@@ -34,14 +33,16 @@
                   slot="header">
         <slide v-if="item.details" class="desktop-only">
           <div class="details" style="padding: 20px;">
-            <h4 class="modal-title" style="color: #e3b505;">What was the problem?</h4>
+            <h4 class="modal-title" style="color: #e3b505;">{{item.name}}</h4>
             <p class="serif">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <h4 class="modal-title" style="color: #e3b505;">The conception.</h4>
-            <p class="serif">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <div v-if="item.conception">
+              <h4 class="modal-title" style="color: #e3b505;">The conception.</h4>
+              <p class="serif">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
             <h4 style="color: #e3b505B;">Use arrows or dots to change slide and see image assets.</h4>
           </div>
         </slide>
@@ -50,7 +51,7 @@
           </slide>
        </carousel>
 
-       <div class="modal-body" slot="body">
+       <div class="modal-body mobile-only" slot="body">
          <h4 class="modal-title">{{item.name}}</h4>
          <p>{{item.description}}</p>
          <h4 v-if="item.details" class="desktop-only">You can find detailed information about project on first slide.</h4>
@@ -87,6 +88,7 @@
             name: 'Kathy Simon',
             description: 'Album cover for a country music band from Poland.',
             details: true,
+            conception: true,
             type: 'Album cover',
             data: '2017',
             bac: 'rgba(227, 181, 5, 0.95)',
