@@ -6,13 +6,14 @@
           branding, web development, web design, print design...
         </p>
         <img class="logo" :src="logo">
+        <i style="  margin-top: 2%; float: right; color: black;" class="fa fa-level-down fa-2x txt3" aria-hidden="true"></i>
+
         <!-- <h4 class="barlow-semi-condensed">(+48) 531 051 434</h4>
         <a href="mailto:olivetum@gmail.com"><h4 class="barlow-semi-condensed">MATEUSZROZALSKI@GMAIL.COM</h4></a>
-        <h4 class="barlow-semi-condensed">MATEUSZROZALSKI.GITHUB.IO/PORTFOLIO/</h4>
-        <i style="float: right;" class="fa fa-level-down fa-2x txt3" aria-hidden="true"></i> -->
+        <h4 class="barlow-semi-condensed">MATEUSZROZALSKI.GITHUB.IO/PORTFOLIO/</h4>-->
       </div>
     </div>
-    <div style="width:100%; height: 8px; display: flex;">
+    <div style="width:100%; height: 1px; display: flex;">
       <div style="width: 20% !important; height: 100% !important;" class="bg4">  </div>
       <div style="width: 20% !important; height: 100% !important;" class="bg1">  </div>
       <div style="width: 20% !important; height: 100% !important;" class="bg2">  </div>

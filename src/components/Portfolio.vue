@@ -33,12 +33,12 @@
                   slot="header">
         <slide v-if="item.details" class="desktop-only">
           <div class="details" style="padding: 20px;">
-            <h4 class="modal-title" style="color: #e3b505;">{{item.name}}</h4>
+            <h4 class="modal-title txt4">{{item.name}}</h4>
             <p class="serif">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div v-if="item.conception">
-              <h4 class="modal-title" style="color: #e3b505;">The conception.</h4>
+              <h4 class="modal-title txt1">The conception:</h4>
               <p class="serif">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
