@@ -35,7 +35,7 @@
           <div class="details" style="padding: 20px;">
             <h4 class="modal-title txt4">{{item.name}}</h4>
             <p class="serif">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              {{item.description}}
             </p>
             <div v-if="item.conception">
               <h4 class="modal-title txt1">The conception:</h4>
@@ -43,6 +43,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
+            <h4 v-if="item.link" class="modal-title txt4">Visit:
+              <a :href="item.link" target="_blank">
+                <i class="fa fa-external-link"
+                   style="  border-bottom: 1px solid rgb(227, 181, 5);"
+                   aria-hidden="true"></i>
+              </a>
+             </h4>
             <h4 style="color: #e3b505B; padding-top: 5px; border-top: 1px solid;">Use arrows or dots to change slide and see image assets.</h4>
           </div>
         </slide>
@@ -54,9 +61,6 @@
        <div class="modal-body mobile-only" slot="body">
          <h4 class="modal-title">{{item.name}}</h4>
          <p>{{item.description}}</p>
-         <h4 v-if="item.details" class="desktop-only">You can find detailed information about project on first slide.</h4>
-         <h4 v-if="item.details" class="mobile-only">To see more details about this project visit full version of my site.</h4>
-
          <h4 v-if="item.link" class="modal-title">Visit:
            <a :href="item.link" target="_blank">
              <i class="fa fa-external-link"
@@ -64,6 +68,7 @@
                 aria-hidden="true"></i>
            </a>
           </h4>
+         <h4 v-if="item.details" class="mobile-only">To see more details about this project visit full version of my site.</h4>
        </div>
      </modal>
    </div>
@@ -105,6 +110,7 @@
           {
             name: 'Hollow Quartet',
             description: 'Lorem ipsum dolor sit amet, \n consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            details: true,
             type: 'Website',
             link: 'http://hollowquartet.pl',
             bac: 'rgba(55, 71, 83, .95)',
@@ -119,6 +125,7 @@
           {
             name: 'Marek Bracha',
             description: 'Portfolio website for polish classical pianist. Built with HTML5, CSS3 and simple JavaScript animations.',
+            details: true,
             type: 'Website',
             link: 'http://marekbracha.pl',
             bac: 'rgba(55, 71, 83, .95)',
@@ -148,11 +155,12 @@
           {
             name: 'Template site',
             description: 'A Vue.js web app for sale. This template is appropriate for small internet store or as a image based portfolio website.',
+            details: true,
             type: 'Website',
             bac: 'rgba(227, 181, 5, 0.95)',
             img: "url('./src/assets/img/works/template.png')",
             imgs: [
-              {img: "./src/assets/img/works/MarekBRacha/marek.jpg"}
+              {img: "./src/assets/img/works/template.png"}
             ],
             modal: true,
             showModal: false
