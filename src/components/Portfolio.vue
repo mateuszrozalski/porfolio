@@ -99,17 +99,29 @@
             bac: 'rgba(227, 181, 5, 0.95)',
             img: "url('./src/assets/img/works/KathySimon/kathySimo_wide.png')",
             imgs: [
-              {img: "./src/assets/img/works/KathySimon/kathySimo_wide.png"},
               {img: "./src/assets/img/works/KathySimon/KathySimon_EP_Wide.jpg"},
               {img: "./src/assets/img/works/KathySimon/KathySimon_EP_B_Wide.jpg"},
-              {img: "./src/assets/img/works/KathySimon/KathySimon_Mockup_Wide.jpg"}
+              {img: "./src/assets/img/works/KathySimon/KathySimon_EP_Wide.png"}
+            ],
+            modal: true,
+            showModal: false
+          },
+          {
+            name: 'Template site',
+            description: 'A Vue.js web app for sale. This template is appropriate for small internet store or as a image based portfolio website. In process.',
+            details: true,
+            type: 'Website',
+            bac: 'rgba(55, 71, 83, .95)',
+            img: "url('./src/assets/img/works/template.png')",
+            imgs: [
+              {img: "./src/assets/img/works/template.png"}
             ],
             modal: true,
             showModal: false
           },
           {
             name: 'Hollow Quartet',
-            description: 'Lorem ipsum dolor sit amet, \n consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            description: 'A portfolio website for rock-folk band Hollow Quartet.',
             details: true,
             type: 'Website',
             link: 'http://hollowquartet.pl',
@@ -128,7 +140,7 @@
             details: true,
             type: 'Website',
             link: 'http://marekbracha.pl',
-            bac: 'rgba(55, 71, 83, .95)',
+            bac: 'rgba(227, 181, 5, 0.95)',
             img: "url('./src/assets/img/works/MarekBracha/marek.jpg')",
             imgs: [
               {img: "./src/assets/img/works/MarekBracha/mb_1.jpg"},
@@ -146,21 +158,8 @@
             imgs: [
               {img: "./src/assets/img/works/Posters/hq_wide.jpg"},
               {img: "./src/assets/img/works/Posters/imuz_koncert.jpg"},
-              {img: "./src/assets/img/works/Posters/konkurs_g.jpg"},
+              {img: "./src/assets/img/works/Posters/wkm.jpg"},
               {img: "./src/assets/img/works/Posters/6Plyt.jpg"}
-            ],
-            modal: true,
-            showModal: false
-          },
-          {
-            name: 'Template site',
-            description: 'A Vue.js web app for sale. This template is appropriate for small internet store or as a image based portfolio website.',
-            details: true,
-            type: 'Website',
-            bac: 'rgba(227, 181, 5, 0.95)',
-            img: "url('./src/assets/img/works/template.png')",
-            imgs: [
-              {img: "./src/assets/img/works/template.png"}
             ],
             modal: true,
             showModal: false
