@@ -50,7 +50,7 @@
                    aria-hidden="true"></i>
               </a>
              </h4>
-            <h4 style="color: #e3b505B; padding-top: 5px; border-top: 1px solid;">Use arrows or dots to change slide and see image assets.</h4>
+            <h4 style="color: rgb(240, 84, 35); padding-top: 5px; border-top: 1px solid black;">Use arrows or dots to change slide and see image assets.</h4>
           </div>
         </slide>
           <slide v-for="picture in item.imgs" class="bombka">
@@ -93,7 +93,7 @@
             name: 'Kathy Simon',
             description: 'Album cover for a country music band from Poland.',
             details: true,
-            conception: true,
+            conception: false,
             type: 'Album cover',
             data: '2017',
             bac: 'rgba(227, 181, 5, 0.95)',
