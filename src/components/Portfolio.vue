@@ -56,6 +56,9 @@
           <slide v-for="picture in item.imgs" class="bombka">
              <img :src="picture.img" />
           </slide>
+          <slide v-if="item.iframe" class="bombka">
+             <iframe :src="item.iframe"></iframe>
+          </slide>
        </carousel>
 
        <div class="modal-body mobile-only" slot="body">
@@ -89,14 +92,33 @@
 
         works: [
           {
-            test: [{img1: 'lol'}],
+            name: 'asseco',
+            description: 'HTML5 Web Banner for Asseco Banking app.',
+            details: true,
+            conception: false,
+            type: 'HTML5 Web Banner',
+            data: '2017',
+            bac: 'rgba(227, 181, 5, 0.95)',
+            img: "url('./src/assets/img/works/asseco/asseco_cbp1.jpg')",
+            imgs: [
+              {img: "./src/assets/img/works/asseco/asseco_cbp1.jpg"},
+              {img: "./src/assets/img/works/asseco/asseco_cbp2.jpg"},
+              {img: "./src/assets/img/works/asseco/asseco_cbp3.jpg"},
+              {img: "./src/assets/img/works/asseco/asseco_cbp4.jpg"},
+              {img: "./src/assets/img/works/asseco/asseco_cbp5.jpg"},
+            ],
+            iframe: "src/assets/img/works/asseco/300x600/asseco_300x600.html",
+            modal: true,
+            showModal: false
+          },
+          {
             name: 'Kathy Simon',
             description: 'Album cover for a country music band from Poland.',
             details: true,
             conception: false,
             type: 'Album cover',
             data: '2017',
-            bac: 'rgba(227, 181, 5, 0.95)',
+            bac: 'rgba(55, 71, 83, .95)',
             img: "url('./src/assets/img/works/KathySimon/kathySimo_wide.png')",
             imgs: [
               {img: "./src/assets/img/works/KathySimon/KathySimon_EP_Wide.jpg"},
@@ -125,7 +147,7 @@
             details: true,
             type: 'Website',
             link: 'http://hollowquartet.pl',
-            bac: 'rgba(55, 71, 83, .95)',
+            bac: 'rgba(227, 181, 5, 0.95)',
             img: "url('./src/assets/img/works/HollowQuartet/hq.jpg')",
             imgs: [
               {img: "./src/assets/img/works/HollowQuartet/hq_1.jpg"},
@@ -153,7 +175,7 @@
             name: 'Posters',
             description: 'A set of poster I have made during last two years.',
             type: 'Print',
-            bac: 'rgba(227, 181, 5, 0.95)',
+            bac: 'rgba(55, 71, 83, .95)',
             img: "url('./src/assets/img/works/Posters/hq_wide.jpg')",
             imgs: [
               {img: "./src/assets/img/works/Posters/hq_wide.jpg"},
