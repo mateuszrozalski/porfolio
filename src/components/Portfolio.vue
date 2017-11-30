@@ -57,7 +57,7 @@
              <img :src="picture.img" />
           </slide>
           <slide v-if="item.iframe" class="bombka">
-             <iframe :src="item.iframe"></iframe>
+             <iframe class="center-block iframe" :style="{height: item.iframeHeight}" :src="item.iframe"></iframe>
           </slide>
        </carousel>
 
@@ -108,6 +108,7 @@
               {img: "./src/assets/img/works/asseco/asseco_cbp5.jpg"},
             ],
             iframe: "src/assets/img/works/asseco/300x600/asseco_300x600.html",
+            iframeHeight: '600px',
             modal: true,
             showModal: false
           },
